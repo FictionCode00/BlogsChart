@@ -7,6 +7,12 @@
 	.inner-graph img {
 		width: 100%;
 	}
+	.other-post-lft img {
+		width: 100%;
+	}
+	.author-right img {
+		width: 100%;
+	}
 	.graph-country h3 {
 		color: #1E1E1E;
 		font-size: 48px;
@@ -162,7 +168,30 @@
 	}
 	.blog-data p {
 		font-size: 17px;
+		white-space: nowrap;
+		width: 257px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
+	.blog-data li {
+    font-size: 17px;
+    white-space: nowrap;
+    width: 257px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blog-data ul, .blog-data ol {
+    padding: 0;
+    margin: 0;
+}
+.blog-data li span, .blog-data p span {
+    background: transparent;
+    position: static;
+    width: auto;
+    height: auto;
+    display: inherit;
+	font-size: 17px;
+}
 	.recent-blog-inner span {
 		background: #0054B6;
 		color: #fff;
@@ -404,6 +433,9 @@
 	.recent-blog-inner img {
 		width: 100%;
 		border-radius: 15px;
+		height: 300px;
+		object-fit: cover;
+		box-shadow: 0 0 10px 1px #ddd;
 	}
 	.blog-data {
 		background-image: url("../images/blog-sahde.png");
@@ -414,4 +446,180 @@
 		z-index: 9;
 		max-width: 88%;
 		margin: -80px auto 0;
+	}
+	.single-post-right ul.tags li {
+		padding: 12px 11px;
+		font-size: 13px;
+	}
+	.single-post-right ul.social-link li {
+		list-style: none;
+		margin-right: 15px;
+	}
+	.single-post-right ul.social-link li a {
+		background: #0054B6;
+		border-radius: 100px;
+		width: 46px;
+		display: flex;
+		height: 46px;
+		color: #fff;
+		text-decoration: none;
+		font-weight: 600;
+		align-items: center;
+		justify-content: center;
+	}
+	ul.populra-post {
+		padding: 0;
+		margin: 0;
+	}
+	.single-post-right ul.social-link {
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+	ul.populra-post li div p {
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		margin: 0;
+	}
+	ul.populra-post li span {
+		margin-right: 17px;
+	}
+	ul.populra-post li div h5 {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+	}
+	ul.populra-post li {
+		display: flex;
+		align-items: center;
+		margin: 0 0 24px;
+	}
+	.single-post-right h6 {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		color: #333;
+		margin: 70px 0 16px;
+	}
+	.single-post-right .form-group button {
+		background: #0054B6;
+		border: 0;
+		color: #fff;
+		position: absolute;
+		right: 5px;
+		top: 4px;
+		height: 40px;
+		width: 40px;
+		border-radius: 4px;
+	}
+	.single-post-right .form-group input {
+		height: 48px;
+		border: 1px solid #6b6b6b;
+		border-radius: 4px;
+		padding: 0 12px;
+		width: 100%;
+	}
+	.single-post-right {
+		padding-left: 25px;
+	}
+	.single-post-right .form-group {
+		position: relative;
+	}
+	.pre-next-sec {
+		border-bottom: 1px solid;
+		padding-bottom: 42px;
+		margin-bottom: 50px;
+	}
+	.comenting ul li h4 {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 31.992px;
+	}
+	.comenting ul li {
+		display: flex;
+		margin-bottom: 20px;
+	}
+	.comenting ul li span {
+		margin-right: 18px;
+	}
+	.comenting ul {
+		padding: 0;
+		margin: 0;
+	}
+	.comenting h5 {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 38px;
+		margin-bottom: 30px;
+	}
+	.inner-img-blog h5 {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		text-align: center;
+		margin: 13px 0 0;
+	}
+	.inner-img-blog span {
+		margin-bottom: 6px;
+		display: table;
+		width: 100%;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 600;
+		color: #333;
+	}
+	ul.tags li {
+		list-style: none;
+		font-size: 14px;
+		background: #0054B6;
+		font-style: normal;
+		font-weight: 400;
+		color: #fff;
+		border-radius: 4px;
+		padding: 14px 22px;
+		margin-right: 7px;
+	}
+	.inner-img-blog img {
+		width: 100%;
+	}
+	ul.tags {
+		padding: 0;
+		display: flex;
+		margin: 0 0 40px;
+	}
+	.single-post-left h6 {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 32px;
+		width: 100%;
+		text-align: center;
+		color: #777;
+		margin: 21px 0 20px;
+	}
+	.single-post-left h3 {
+		font-size: 45px;
+		font-style: normal;
+		font-weight: 700;
+		margin-bottom: 25px;
+		margin-top: 40px;
+	}
+	.single-post-left p {
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 32px;
+		color: #666;
+	}
+	.graph-text-desc h5 {
+		font-size: 22px;
+	}
+	.graph-text-desc {
+		padding: 54px 0 0;
+	}
+	.graph-text-desc p a {
+		color: #0859b8;
 	}

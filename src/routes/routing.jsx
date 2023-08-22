@@ -1,5 +1,6 @@
 import About from "../components/about";
 import Blog from "../components/blog";
+import BlogDetails from "../components/blogDetails";
 import Contact from "../components/contact";
 
 const { Routes, Route } = require("react-router-dom")
@@ -13,6 +14,7 @@ const Routing=()=>{
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
             <Route path="/blog" element={<Blog/>}/>
+            <Route path="/:slug" element={<BlogDetails/>}/>
             <Route path="/contact" element={<Contact/>}/>
         </Routes>
         
