@@ -20,6 +20,8 @@ const Blog = () => {
     useEffect(()=>{
         BlogList()
     },[])
+ 
+
     return (
         <>
             <section class="main-blog">
@@ -44,7 +46,7 @@ const Blog = () => {
                 <div class="container">
                     <h2>Most Recent Posts</h2>
                     <div class="row">
-                        {blogs && blogs.map((blog)=>
+                        {blogs && blogs.slice().reverse().map((blog)=>
                         <div class="col-md-4" onClick={()=>navigate(`/${blog.slug}`)}>
                             <div class="recent-blog-inner">
                                 <span>{moment(blog.createdAt).format("DD")}<br/>

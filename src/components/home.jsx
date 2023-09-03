@@ -190,9 +190,9 @@ const Home = () => {
                                     <label>Select Country</label>
                                     <select value={countryOption} onChange={selectedMainCountry}>
                                         <option value="">Select...</option>
-                                        {countries && countries.map((country) =>
+                                        {designation&&(countries && countries.map((country) =>
                                             <option value={JSON.stringify({ "value": country.income, "label": country.country, "description": country.description })}>{country.country}</option>
-                                        )}
+                                        ))}
 
                                     </select>
                                 </Col>
