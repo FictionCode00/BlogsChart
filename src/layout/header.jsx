@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -6,23 +6,23 @@ const Header = () => {
             <header>
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container">
-                        <a class="navbar-brand" href="#">Logo</a>
+                        <Link class="navbar-brand" to="/">Wagedifferentials</Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <Link class="nav-link active" to="/">Home</Link>
+                                <li class="">
+                                    <NavLink class="" to="/">Home</NavLink>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link" to="/about">About Us</Link>
+                                    <NavLink class="nav-link" to="/about">About Us</NavLink>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link" to="/blog">Blog</Link>
+                                    <NavLink class="nav-link" to="/blog">Blog</NavLink>
                                 </li>
                                 <li class="nav-item">
-                                    <Link class="nav-link" to="/contact">Contact</Link>
+                                    <NavLink class="nav-link" to="/contact">Contact</NavLink>
                                 </li>
 
 

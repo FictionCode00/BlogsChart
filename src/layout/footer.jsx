@@ -1,4 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
+    const handleClick = () => {
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
+      };
     return (
         <>
             <footer class="main-footer">
@@ -7,7 +13,7 @@ const Footer = () => {
                         <div class="col-md-6">
                             <div class="footer-left">
                                 <div class="logo-ft">
-                                    <a href="#">Logo.</a>
+                                    <a href="#">Wagedifferentials</a>
                                 </div>
                                 <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy.</p>
                             </div>
@@ -15,10 +21,18 @@ const Footer = () => {
                         <div class="col-md-6">
                             <div class="footer-right">
                                 <ul class="ft-link">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Article</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li >
+                                        <Link class="nav-link active" to="/" onClick={handleClick}>Home</Link>
+                                    </li>
+                                    <li >
+                                        <Link class="nav-link" to="/about" onClick={handleClick}>About Us</Link>
+                                    </li>
+                                    <li >
+                                        <Link class="nav-link" to="/blog" onClick={handleClick}>Blog</Link>
+                                    </li>
+                                    <li >
+                                        <Link class="nav-link" to="/contact" onClick={handleClick}>Contact</Link>
+                                    </li>
                                 </ul>
                                 <ul class="social-link">
                                     <li><a href="#">Dr</a></li>

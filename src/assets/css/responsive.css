@@ -145,6 +145,30 @@ section.reent-blog .col-md-4 {
     .graph-country {
         padding: 20px 0;
     }
+    .slct {
+		margin: 5px 0;
+		padding-left: 0 !important;
+	}
+    .main-log-right img {
+        height: 210px;
+    }
+	.filters-graph {
+		margin-bottom: 18px;
+	}
+    .filters-graph .row {
+        max-width: 100%;
+    }
+    .logo-ft a {
+        font-size: 22px;
+    }
+    .footer-right .ft-link li a {
+        font-size: 14px;
+        padding: 0 4px;
+    }
+    .slct.col-md-4 {
+        padding-left: 0 !important;
+        margin-bottom: 11px;
+    }
     .main-log-right {
         margin-top: 20px;
     }

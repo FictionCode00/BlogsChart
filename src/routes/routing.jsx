@@ -3,13 +3,16 @@ import Blog from "../components/blog";
 import BlogDetails from "../components/blogDetails";
 import Contact from "../components/contact";
 
-const { Routes, Route } = require("react-router-dom")
+
+const { Routes, Route, } = require("react-router-dom")
 const { default: Home } = require("../components/home")
 
 
 const Routing=()=>{
+   
     return(
         <>
+       
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
