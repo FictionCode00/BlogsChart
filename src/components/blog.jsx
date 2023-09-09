@@ -53,7 +53,7 @@ const Blog = () => {
                                     {moment(blog.createdAt).format("MMM")}</span>
                                 <img src={img_url+blog.image?.data.split('/')[2]|| require("../assets/images/blog-one.png")} alt="" />
                                 <div class="blog-data">
-                                    <h5>{blog.title}</h5>
+                                    <h5 className="bg-title">{blog.title}</h5>
                                     {/* <p>We offer a comprehensive online QA Training course...  </p> */}
                                     <div dangerouslySetInnerHTML={{__html: blog.description.split(' ').slice(0,10).join(' ')}} />
                                 </div>

@@ -6,7 +6,7 @@ const Header = () => {
             <header>
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container">
-                        <Link class="navbar-brand" to="/">Wagedifferentials</Link>
+                        <Link class="navbar-brand" to="/"><img className="logo-img" src={require('../assets/images/newone.png')}/></Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                         </button>

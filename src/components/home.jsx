@@ -185,7 +185,16 @@ const Home = () => {
                         <div className="filters-graph">
                             <Row>
 
-                                
+                                <Col className='slct' md="2">
+                                <label>Select Designations</label>
+                                    <select onChange={(e) => { setSelectedOptions([]); setCountryOption(''); setGraphCountries([]); setDesignation(e.target.value) }}>
+                                        <option value="">Select...</option>
+                                        {designations && designations.map((designation) =>
+                                            <option value={designation}>{designation}</option>
+                                        )}
+
+                                    </select>
+                                </Col>
                                 <Col className='slct' md="2">
                                     <label>Select Country</label>
                                     <select value={countryOption} onChange={selectedMainCountry}>
@@ -217,16 +226,7 @@ const Home = () => {
 
                                     </select>
                                 </Col>
-                                <Col className='slct' md="2">
-                                <label>Select Designations</label>
-                                    <select onChange={(e) => { setSelectedOptions([]); setCountryOption(''); setGraphCountries([]); setDesignation(e.target.value) }}>
-                                        <option value="">Select...</option>
-                                        {designations && designations.map((designation) =>
-                                            <option value={designation}>{designation}</option>
-                                        )}
-
-                                    </select>
-                                </Col>
+                                
                             </Row>
                         </div>
 
@@ -238,9 +238,10 @@ const Home = () => {
                     </div>
                     <div class="graph-text-desc">
                         <h5>{mainCountry.label}</h5>
-                        <p>{mainCountry.description}
-                            {/* <a href="#"> Read more</a> */}
-                        </p>
+                        <div dangerouslySetInnerHTML={{ __html: mainCountry.description }}/>
+                        {/* <p>{mainCountry.description}
+                            <a href="#"> Read more</a>
+                        </p> */}
                     </div>
                 </div>
             </section>
